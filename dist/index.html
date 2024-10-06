@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crack My Egg</title>
+  <link rel="stylesheet" crossorigin href="/assets/index-DGl8I0Dx.css">
+</head>
+<body>
+
+    <!-- Wrapper -->
+
+    <div class="wrapper w-[100vw] h-[100vh] flex flex-col justify-between">
+
+        <audio src="./music/bg_music.mp3" id="bgmusic"></audio>
+
+        <!-- Top Part of the Game -->
+
+        <div class="w-fit lg:w-full lg:flex items-center justify-between lg:px-16 px-2 pt-4 mx-auto">
+
+
+            <!-- 2 Sections inside Top part -->
+
+            <a href="#" class="flex-row items-center w-fit hidden lg:flex">
+
+                <!-- Egg image as Logo -->
+
+                <img src="/assets/egg-img-DWmwTtj-.png" class="w-24" alt="egg">
+
+                <!-- Text as Logo Text  -->
+
+                <h1 class= "logo text-teal-50 font-bold text-[40px]">Crack My Egg</h1>
+
+            </a>
+            
+            <div class="flex flex-row justify-between items-center min-w-[280px] lg:w-fit min-h-[95.7px]">
+
+                <!-- 2 Divs inside this Top Part's Div -->
+
+                <!-- Coins Section -->
+
+                <div class="bg-white w-32 flex flex-row justify-center items-center rounded-full gap-4 py-[4px] px-3">
+
+                    <!-- Coins Image -->
+                    <img src="/assets/eggcoin-C9QNKpg1.png" width="50px" class="flex items-center border-r-2 pb-1 border-gray-300 pr-2" alt="">
+
+                    <section class="coins text-[18px]">0</section>
+                    
+                </div>
+
+                <div class="bg-white w-32 flex flex-row justify-center items-center rounded-full gap-4 py-[4px] px-3">
+
+                    <!-- High Score -->
+
+                    <img src="/assets/trophy-2y6AAHPq.png" width="50px" class="flex items-center border-r-2 border-gray-300 pt-1 pr-2" alt="">
+
+                    <section class="highscore text-[18px]">0</section>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <!-- Actual Content of Game  -->
+
+        <div class="flex justify-center items-center flex-col gap-y-4">
+
+            <!-- Egg Image section -->
+
+            <div>
+                <audio src="./music/click.wav" id="clicksound"></audio>
+                <img src="/assets/egg-img-DWmwTtj-.png" onclick="increment()" width="600px" alt="">
+            </div>
+
+            <!-- Counting section  -->
+
+            <div class="counter font-bold font-sans text-teal-50 text-[60px]">
+                0
+            </div>
+
+            <!-- Reset Section -->
+
+            
+<button class="noselect" onclick="reset()"><span class="text">RESET</span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"></path></svg></span></button>
+
+        </div>
+
+        <!-- Footer Section  -->
+
+        
+    <footer class="flex justify-center items-center lg:py-4 p-4 lg:w-[1080px] w-fit text-center text-white border-t-[1px] border-gray-300 mx-auto mt-8">
+        <p>&copy; Copyright @ Zaheer Patel 2024 | All Rights Reserved</p>
+    </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
